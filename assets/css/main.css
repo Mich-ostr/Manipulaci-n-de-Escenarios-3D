@@ -1,0 +1,139 @@
+/* ==========================================================================
+   ESTRUCTURA GENERAL - DASHBOARD CYBERPUNK ESTABLIZADO
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #08090c;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* --- HEADER REFINADO EN GRIS CARBONO --- */
+header {
+    background-color: #14161d !important;
+    padding: 1.2rem 2rem !important;
+    border-bottom: 2px solid #00ffcc !important; /* Línea fina cian que combina con la base */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffffff !important;
+}
+
+/* --- CONTENEDOR DE TRABAJO ESTRUCTURAL --- */
+#main-content {
+    display: flex !important;
+    flex-direction: row !important;
+    flex: 1 !important;
+    height: calc(100vh - 75px) !important;
+    overflow: hidden !important;
+    background-color: #08090c;
+}
+
+/* --- SIDEBAR MATE --- */
+#sidebar {
+    width: 300px !important;
+    min-width: 300px !important;
+    max-width: 300px !important;
+    height: 100% !important;
+    background-color: #1a1c23 !important;
+    padding: 1.5rem !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    flex-shrink: 0 !important;
+}
+
+.section-label {
+    display: block !important;
+    color: #00ffcc !important;
+    font-size: 0.75rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   BOTONES INTERACTIVOS: CÓDIGO SEGURO (SIN COMPLICACIONES)
+   ========================================================================== */
+.btn-ui {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    color: #9ca3af !important;
+    padding: 14px 20px !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    cursor: pointer !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease !important;
+}
+
+/* HOVER SEGURO: Iluminación Violeta Elegante */
+.btn-ui:hover {
+    background-color: rgba(139, 92, 246, 0.15) !important;
+    color: #ffffff !important;
+    border-color: #8b5cf6 !important;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2) !important;
+}
+
+/* ACTIVE SEGURO: El botón morado degradado impecable de tu diseño */
+.btn-ui.active {
+    background: linear-gradient(90deg, #d946ef 0%, #8b5cf6 100%) !important;
+    color: #ffffff !important;
+    border-color: #00ffcc !important; /* Borde cian nítido */
+    font-weight: 700 !important;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.4) !important;
+}
+
+/* ==========================================================================
+   ESCENARIO 3D (IFRAME)
+   ========================================================================== */
+iframe {
+    flex: 1 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    display: block !important;
+    background-color: #000000 !important;
+}
+
+/* ==========================================================================
+   FOOTER COMBINADO EN GRIS CARBÓN MATE
+   ========================================================================== */
+footer {
+    background-color: #14161d !important;
+    padding: 1rem 2rem !important;
+    font-size: 0.85rem !important;
+    border-top: 2px solid #00ffcc !important; /* Hace juego perfecto con el Header */
+    color: #94a3b8 !important;
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.tec-brand {
+    color: #00ffcc !important;
+    font-weight: 700 !important;
+}
